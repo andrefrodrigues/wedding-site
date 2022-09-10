@@ -16,6 +16,8 @@
         z-index: 10;
         @apply py-2;
         @apply flex items-center;
+        @apply border-b-2;
+        @apply border-gray-300;
     }
 
 </style>
