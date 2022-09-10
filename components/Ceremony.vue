@@ -54,8 +54,9 @@
     @apply text-4xl;
     @apply mt-10;
     @apply text-gray-100;
-
+    @apply mb-12;
     @media screen(md) {
+        @apply mb-24;
         @apply text-4xl;
     }
 }

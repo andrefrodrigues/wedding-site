@@ -9,10 +9,14 @@
 .church-map {
     @apply relative;
     z-index: 1;
-    @apply mt-24;
-    width: 350px;
-    height: 350px;
-    @apply mx-auto;
+    width: 250px;
+    height: 250px;
+    @apply mx-auto my-0;
+
+    @media screen(sm) {
+        width: 350px;
+        height: 350px;
+    }
 }
 
 a {

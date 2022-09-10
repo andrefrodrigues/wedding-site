@@ -11,9 +11,10 @@
     .menu {
         height: 60px;
         @apply bg-gray-100;
-        position: sticky;
+        position: fixed;
         top: 0;
         z-index: 10;
+        width:100%;
         @apply py-2;
         @apply flex items-center;
         @apply border-b-2;
