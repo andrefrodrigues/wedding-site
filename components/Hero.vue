@@ -20,7 +20,7 @@
 .hero {
     animation: fadeIn 1.5s;
     @apply relative;
-    height: calc(100vh - 60px);
+    height: 100vh;
     background-image: linear-gradient(180deg, #a5b4fc, transparent 23%), linear-gradient(180deg, transparent 47%, #a5b4fc), url('static/hero-pic-mobile.jpeg');
     background-position: center;
     background-repeat: no-repeat;
