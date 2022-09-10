@@ -1,8 +1,32 @@
 @font-face {
-    font-family: "Lucida Caligraphy";
-    src: url(~static/LCALLIG.ttf) format("truetype");
+    font-family: "Charm";
+    src: url(~static/fonts/Charm/Charm-Bold.ttf) format("truetype");
+    font-weight: bold;
 }
 
+@font-face {
+    font-family: "Charm";
+    src: url(~static/fonts/Charm/Charm-Bold.ttf) format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url(~static/fonts/Merriweather/Merriweather-Regular.ttf) format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url(~static/fonts/Merriweather/Merriweather-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url(~static/fonts/Merriweather/Merriweather-Light.ttf) format("truetype");
+    font-weight: lighter
+}
 
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -13,6 +37,7 @@
 html {
     height: 100%;
     scroll-behavior: smooth;
+    font-family: Merriweather;
 }
 
 body {

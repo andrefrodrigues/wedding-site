@@ -6,7 +6,7 @@
         <a href="#ceremony">
             <h1 class="title"><img class="rings" src="rings.png">Cerimónia</h1>
         </a>
-        <h1 class="church">Sé Catedral de Braga</h1>
+        <h1 class="church">Sé de Braga pelas 11h15</h1>
         <ChurchMap />
     </section>
 </template>

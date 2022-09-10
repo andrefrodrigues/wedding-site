@@ -16,8 +16,8 @@
     }
 
     .names {
-        font-family: Lucida Caligraphy;
+        font-family: Charm;
         color: #CC99E9;
-        @apply text-lg;
+        @apply text-xl;
     }
 </style>
