@@ -77,7 +77,8 @@
 
     .unit {
         @apply text-4xl;
-
+        font-feature-settings: "tnum";
+        font-variant-numeric: tabular-nums;
         @media screen(md) {
             @apply text-5xl;
         }
