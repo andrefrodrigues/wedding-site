@@ -4,7 +4,7 @@
 <template>
     <section class="ceremony" id="ceremony">
         <a href="#ceremony">
-            <h1 class="title">Cerimónia</h1>
+            <h1 class="title"><img class="rings" src="rings.png">Cerimónia</h1>
         </a>
         <h1 class="church">Sé Catedral de Braga</h1>
         <ChurchMap />
@@ -41,6 +41,7 @@
     z-index: 1;
     @apply text-5xl;
     @apply text-gray-100;
+    @apply flex items-center justify-center;
 
     @media screen(md) {
         @apply text-6xl;
@@ -57,5 +58,12 @@
     @media screen(md) {
         @apply text-4xl;
     }
+}
+
+.rings {
+    display: inline;
+    width: 48px;
+    height: 48px;
+    @apply mr-2;
 }
 </style>
