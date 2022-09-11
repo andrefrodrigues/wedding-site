@@ -9,8 +9,8 @@
 .church-map {
     @apply relative;
     z-index: 1;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     @apply mx-auto my-0;
 
     @media screen(sm) {

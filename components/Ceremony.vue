@@ -14,6 +14,7 @@
 <style lang="postcss" scoped>
 .ceremony {
     height: calc(100vh - 60px);
+    min-height: 500px;
     @apply p-10;
     @apply text-center;
     @apply relative;
