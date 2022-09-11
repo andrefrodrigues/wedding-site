@@ -71,7 +71,6 @@
     .timer {
         @apply absolute top-1/2 left-1/2;
         transform: translate(-50%, -50%);
-        @apply text-gray-100;
         @apply flex;
         @apply items-start justify-center;;
     }

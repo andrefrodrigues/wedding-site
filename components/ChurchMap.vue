@@ -9,14 +9,21 @@
 .church-map {
     @apply relative;
     z-index: 1;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    max-width: 500px;
     @apply mx-auto my-0;
 
     @media screen(sm) {
-        width: 350px;
-        height: 350px;
+        filter: brightness(50%);
+        transition: all 500ms;
+        width: 300px;
+        height: 300px;
     }
+}
+
+.church-map:hover {
+    transform: scale(1.4);
+    filter: none;
 }
 
 a {

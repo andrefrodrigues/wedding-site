@@ -4,11 +4,11 @@
       <Hero />
       <Counter />
       <Ceremony />
+      <Party />
+      <Accomodation />
     </main>
 </template>
-
 <script lang="ts" setup>
-import Ceremony from '~/components/Ceremony.vue';
 
 
 </script>

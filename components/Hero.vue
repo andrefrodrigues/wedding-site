@@ -33,7 +33,6 @@
     font-family: Charm;
     @apply w-full;
     @apply font-bold;
-    @apply text-gray-100;
     @apply text-center;
     @apply absolute left-1/2;
     transform: translate(-50%);

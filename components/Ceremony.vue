@@ -1,8 +1,16 @@
 <script lang="ts" setup>
+    import { ref } from 'vue';
+    
+    const isPortrait = ref(window.screen.orientation.type === 'portrait-primary');
 
+    const handleOrientationChange = () => {
+        isPortrait.value = window.screen.orientation.type === 'portrait-primary';
+    };
+
+    window.addEventListener('orientationchange', handleOrientationChange);
 </script>
 <template>
-    <section class="ceremony" id="ceremony">
+    <section class="ceremony" id="ceremony" :class="{'viewport-height': isPortrait}">
         <a href="#ceremony">
             <h1 class="title"><img class="rings" src="rings.png">Cerimónia</h1>
         </a>
@@ -12,15 +20,20 @@
     </section>
 </template>
 <style lang="postcss" scoped>
-.ceremony {
+
+.viewport-height {
     height: calc(100vh - 60px);
     min-height: 500px;
+}
+.ceremony {
     @apply p-10;
     @apply text-center;
     @apply relative;
     @apply bg-indigo-200;
 
-
+    @media screen(md) {
+        height: calc(100vh - 60px);
+    }
 }
 
 .ceremony::after {
@@ -42,7 +55,6 @@
     @apply relative;
     z-index: 1;
     @apply text-5xl;
-    @apply text-gray-100;
     @apply flex items-center justify-center;
 
     @media screen(md) {
@@ -55,7 +67,6 @@
     z-index: 1;
     @apply text-4xl;
     @apply mt-10;
-    @apply text-gray-100;
 
 }
 
@@ -63,7 +74,6 @@
     @apply relative;
     z-index: 1;
     @apply text-4xl;
-    @apply text-gray-100;
     @apply mb-12;
 
     @media screen(md) {
