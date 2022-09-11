@@ -22,17 +22,18 @@
 <style lang="postcss" scoped>
 
 .viewport-height {
-    height: calc(100vh - 60px);
+    height: 100vh;
     min-height: 500px;
 }
 .ceremony {
+    scroll-margin-top: 40px;
     @apply p-10;
     @apply text-center;
     @apply relative;
     @apply bg-indigo-200;
 
     @media screen(md) {
-        height: calc(100vh - 60px);
+        height: 100vh;
     }
 }
 

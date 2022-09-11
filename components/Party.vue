@@ -27,9 +27,10 @@
 
 <style lang="postcss" scoped>
 .party {
+    scroll-margin-top: 40px;
     @apply text-center;
     @apply p-10;
-    height: calc(100vh - 60px);
+    height: 100vh;
     @apply bg-indigo-300;
     @apply relative;
 }
