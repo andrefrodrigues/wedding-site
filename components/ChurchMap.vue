@@ -1,6 +1,6 @@
 <template>
     <div class="church-map">
-        <a href="https://maps.google.pt/maps?q=S%C3%A9%20Catedral%20de%20braga&t=&z=17&ie=UTF8&iwloc=">
+        <a href="https://maps.google.pt/maps?q=S%C3%A9%20Catedral%20de%20braga&t=&z=17&ie=UTF8&iwloc=" target="_blank">
             <img src="mapa-se.png">
         </a>
     </div>

@@ -13,7 +13,7 @@
         @apply bg-gray-100;
         position: fixed;
         top: 0;
-        z-index: 10;
+        z-index: 100;
         width:100%;
         @apply py-2;
         @apply flex items-center;

@@ -26,8 +26,8 @@
     min-height: 500px;
 }
 .ceremony {
-    scroll-margin-top: 40px;
-    @apply p-10;
+    scroll-margin-top: 60px;
+    @apply p-9;
     @apply text-center;
     @apply relative;
     @apply bg-indigo-200;
@@ -49,7 +49,7 @@
     background-size: cover;
     top: 0;
     opacity: 0.6;
-    @apply -mx-10;
+    @apply -mx-9;
 }
 
 .title {

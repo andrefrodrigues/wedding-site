@@ -8,17 +8,11 @@
                 <h1 class="title"><img class="popper" src="party-popper.png">Festa</h1>
             </a>
             <div class="card-wrapper">
-                <a href="https://www.torredanaia.com/">
-                    <div class="card">
-                        <h2 class="card-title">Torre da Naia</h2>
-                        <img class="card-img" src="torre-da-naia-entrada.jpeg">
-                    </div>
+                <a href="https://www.torredanaia.com/" target="_blank">
+                    <Card title="Torre da Naia" image="torre-da-naia-entrada.jpeg"/>
                 </a>
-                <a href="https://maps.google.com/maps?q=torre%20da%20naia&t=&z=13&ie=UTF8&iwloc">
-                    <div class="card">
-                        <h2 class="card-title">Localização</h2>
-                        <img class="card-img" src="naia-map.png">
-                    </div>
+                <a href="https://maps.google.com/maps?q=torre%20da%20naia&t=&z=13&ie=UTF8&iwloc" target="_blank">
+                    <Card title="Localização" image="naia-map.png" />
                 </a>
         </div>
         </div>
@@ -27,9 +21,9 @@
 
 <style lang="postcss" scoped>
 .party {
-    scroll-margin-top: 40px;
+    scroll-margin-top: 60px;
     @apply text-center;
-    @apply p-10;
+    @apply p-9;
     height: 100vh;
     @apply bg-indigo-300;
     @apply relative;
@@ -48,7 +42,7 @@
     top: 0;
     opacity: 0.6;
     filter: brightness(50%);
-    @apply -mx-10;
+    @apply -mx-9;
 }
 
 .title {
@@ -81,40 +75,4 @@
         @apply flex-row;
     }
 }
-
-.card {
-    @apply mt-12;
-    @apply relative;
-    transition: all 500ms;
-
-    @media screen(sm) {
-        @apply mt-0;
-    }
-}
-
-.card:hover {
-    transform: scale(1.2);
-}
-
-.card:hover > .card-img {
-    filter: none;
-}
-
-.card:hover > .card-title {
-    @apply bg-indigo-200;
-}
-
-.card-title {
-    transition: background-color 500ms;
-    @apply w-full;
-    @apply text-3xl;
-    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
-    z-index: 1;
-}
-
-.card-img {
-    filter: brightness(50%);
-    width: 450px;
-}
-
 </style>
