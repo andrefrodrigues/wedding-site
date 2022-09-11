@@ -31,15 +31,21 @@ const { title, image } = defineProps<Props>();
 }
 
 .card:hover {
+    @media screen(sm) {
     transform: scale(1.2);
+    }
 }
 
 .card:hover>.card-img {
-    filter: none;
+    @media screen(sm) {
+        filter: none;
+    }
 }
 
 .card:hover>.card-title {
-    @apply bg-indigo-200;
+    @media screen(sm) {
+        @apply bg-indigo-200;
+    }
 }
 
 .card-title {

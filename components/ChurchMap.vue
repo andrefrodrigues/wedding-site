@@ -22,8 +22,11 @@
 }
 
 .church-map:hover {
-    transform: scale(1.4);
-    filter: none;
+
+    @media screen(sm) {
+        transform: scale(1.4);
+        filter: none;
+    }
 }
 
 a {
