@@ -37,7 +37,7 @@
     @apply text-center;
     @apply absolute left-1/2;
     transform: translate(-50%);
-    @apply text-4xl;
+    font-size: 32px;
     bottom: 50px;
 
     @media screen(md) {
