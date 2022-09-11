@@ -65,6 +65,7 @@
         @apply relative;
         @apply bg-indigo-200;
         height:250px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .timer {

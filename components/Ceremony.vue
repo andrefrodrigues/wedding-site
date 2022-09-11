@@ -6,7 +6,8 @@
         <a href="#ceremony">
             <h1 class="title"><img class="rings" src="rings.png">Cerimónia</h1>
         </a>
-        <h1 class="church">Sé de Braga pelas 11h15</h1>
+        <h1 class="church">Sé de Braga</h1>
+        <h2 class="time">11h15</h2>
         <ChurchMap />
     </section>
 </template>
@@ -54,10 +55,18 @@
     @apply text-4xl;
     @apply mt-10;
     @apply text-gray-100;
+
+}
+
+.time {
+    @apply relative;
+    z-index: 1;
+    @apply text-4xl;
+    @apply text-gray-100;
     @apply mb-12;
+
     @media screen(md) {
         @apply mb-24;
-        @apply text-4xl;
     }
 }
 
