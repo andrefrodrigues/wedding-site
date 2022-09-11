@@ -86,6 +86,8 @@ const hotels = computed(() => hotelData.sort((h1, h2) => h1.name.localeCompare(h
 
 
 .title {
+    white-space: nowrap;
+
     @apply text-5xl;
     @apply flex items-center justify-center;
     @apply mb-16;
