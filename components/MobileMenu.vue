@@ -19,13 +19,13 @@ const open = ref(false);
 <template>
     <div>
         <MenuIcon class="icon" @click="open = !open" :class="{'icon-opened': open}" tabindex="0" />
-            <ul v-if="open" class="menu">
+            <transition-group v-if="open" name="menu" tag="ul" class="menu">
                 <li v-for="item in menuItems" :key="item.id" @click="open = !open">
-                    <Anchor :id="item.id" class="menu-item">
+                    <Anchor  :id="item.id" class="menu-item">
                         {{item.name}}
                     </Anchor>
                 </li>
-            </ul>
+            </transition-group>
     </div>
 </template>
 <style lang="postcss" scoped>
@@ -57,6 +57,19 @@ const open = ref(false);
     font-weight: 600;
     width: 100%;
     @apply p-3;
+    outline: none;
+}
 
+.menu-item:hover, .menu-item:focus, .menu-item:active {
+    @apply text-gray-100 bg-indigo-200;
+}
+
+
+.menu-enter-active, .menu-leave-active {
+  transition: all 10s;
+}
+.menu-enter, .menu-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
 }
 </style>

@@ -14,13 +14,13 @@ const menuItems = computed(() => menuData);
 <template>
     <div class="menu-wrapper">
         <MobileMenu class="mobile-menu" :menu-items="menuItems" />
-        <transition-group name="menu" tag="ul" class="menu">
+        <ul class="menu">
             <li v-for="item in menuItems" :key="item.id">
                 <Anchor :id="item.id" class="menu-item">
                     {{item.name}}
                 </Anchor>
             </li>
-        </transition-group>
+        </ul>
     </div>
 </template>
 <style lang="postcss" scoped>
@@ -57,4 +57,6 @@ const menuItems = computed(() => menuData);
     @apply text-indigo-200;
     transition: color 0.3s ease;
 }
+
+
 </style>
