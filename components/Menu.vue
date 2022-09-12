@@ -3,6 +3,7 @@ import { computed } from 'vue';
 
 
 const menuData = [
+    {name: 'Inicio', id: 'hero'},
     { name: 'Cerimónia', id: 'ceremony' },
     { name: 'Festa', id: 'party' },
     { name: 'Onde ficar', id: 'accomodation' }
@@ -12,17 +13,17 @@ const menuItems = computed(() => menuData);
 </script>
 <template>
     <div class="menu-wrapper">
-        <MobileMenu class="mobile-menu" />
-        <ul class="menu">
+        <MobileMenu class="mobile-menu" :menu-items="menuItems" />
+        <transition-group name="menu" tag="ul" class="menu">
             <li v-for="item in menuItems" :key="item.id">
                 <Anchor :id="item.id" class="menu-item">
                     {{item.name}}
                 </Anchor>
             </li>
-        </ul>
+        </transition-group>
     </div>
 </template>
-<style lang="postcss">
+<style lang="postcss" scoped>
 .mobile-menu {
     @media screen(sm) {
         @apply hidden;
