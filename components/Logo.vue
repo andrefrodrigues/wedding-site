@@ -1,8 +1,8 @@
 <template>
-    <a class="logo" href="#">
+    <Anchor class="logo" id="hero">
         <img src="lavender.png"/>
         <span class="names">Elisa & André</span>
-    </a>
+    </Anchor>
 </template>
 
 <style lang="postcss" scoped>

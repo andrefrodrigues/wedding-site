@@ -4,9 +4,9 @@
 <template>
     <section class="party" id="party">
         <div class="content">
-            <a href="#party">
+            <Anchor id="party">
                 <h1 class="title"><img class="popper" src="party-popper.png">Festa</h1>
-            </a>
+            </Anchor>
             <div class="card-wrapper">
                 <a href="https://www.torredanaia.com/" target="_blank">
                     <Card title="Torre da Naia" image="torre-da-naia-entrada.jpeg"/>

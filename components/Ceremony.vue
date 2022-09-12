@@ -11,9 +11,9 @@
 </script>
 <template>
     <section class="ceremony" id="ceremony" :class="{'viewport-height': isPortrait}">
-        <a href="#ceremony">
+        <Anchor id="ceremony">
             <h1 class="title"><img class="rings" src="rings.png">Cerimónia</h1>
-        </a>
+        </Anchor>
         <h1 class="church">Sé de Braga</h1>
         <h2 class="time">11h15</h2>
         <ChurchMap />

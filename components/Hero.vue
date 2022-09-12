@@ -1,5 +1,5 @@
 <template>
-    <section class="hero">
+    <section class="hero" id="hero">
         <h1 class="names">
             <a href="#">
                 <div>Elisa Beatriz & André Filipe</div>
