@@ -1,30 +1,53 @@
 <script lang="ts" setup>
-    import { ref } from 'vue';
-    
-    const isPortrait = ref(window.screen.orientation.type === 'portrait-primary');
+import { ref } from 'vue';
 
-    const handleOrientationChange = () => {
-        isPortrait.value = window.screen.orientation.type === 'portrait-primary';
-    };
+const isPortrait = ref(window.screen.orientation.type === 'portrait-primary');
 
-    window.addEventListener('orientationchange', handleOrientationChange);
+const handleOrientationChange = () => {
+    isPortrait.value = window.screen.orientation.type === 'portrait-primary';
+};
+
+window.addEventListener('orientationchange', handleOrientationChange);
 </script>
 <template>
     <section class="ceremony" id="ceremony" :class="{'viewport-height': isPortrait}">
-        <Anchor id="ceremony">
-            <h1 class="title"><img class="rings" src="rings.png">Cerimónia</h1>
-        </Anchor>
-        <h1 class="church">Sé de Braga</h1>
-        <h2 class="time">11h15</h2>
-        <ChurchMap />
+        <div class="content">
+            <Anchor id="ceremony">
+                <h1 class="title"><img class="rings" src="rings.png">Cerimónia</h1>
+            </Anchor>
+            <div class="card-wrapper">
+                <a href="https://se-braga.pt/" target="_blank">
+                    <Card title="Sé de Braga" image="se-braga.jpeg" />
+                </a>
+                <a href="https://maps.google.pt/maps?q=S%C3%A9%20Catedral%20de%20braga&t=&z=17&ie=UTF8&iwloc="
+                    target="_blank">
+                    <Card title="Localização" image="mapa-se.png" />
+                </a>
+            </div>
+        </div>
     </section>
 </template>
 <style lang="postcss" scoped>
+.card-wrapper {
+    @apply flex flex-col justify-around;
+
+    @media screen(sm) {
+        @apply w-full;
+        @apply mt-64;
+        @apply flex-row;
+    }
+}
+
+.content {
+    @apply relative;
+    z-index: 1;
+}
 
 .viewport-height {
     height: 100vh;
     min-height: 500px;
 }
+
 .ceremony {
     scroll-margin-top: 60px;
     @apply p-9;
@@ -53,8 +76,6 @@
 }
 
 .title {
-    @apply relative;
-    z-index: 1;
     @apply text-5xl;
     @apply flex items-center justify-center;
 
@@ -63,17 +84,7 @@
     }
 }
 
-.church {
-    @apply relative;
-    z-index: 1;
-    @apply text-4xl;
-    @apply mt-10;
-
-}
-
 .time {
-    @apply relative;
-    z-index: 1;
     @apply text-4xl;
     @apply mb-12;
 
