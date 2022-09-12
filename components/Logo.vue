@@ -8,7 +8,10 @@
 <style lang="postcss" scoped>
     .logo {
         @apply flex items-center;
-        @apply pl-3;
+
+        @media screen(sm) {
+            @apply absolute;
+        }
     }
     img {
         height: 50px;
@@ -18,6 +21,6 @@
     .names {
         font-family: Charm;
         color: #CC99E9;
-        @apply text-xl;
+        @apply text-2xl;
     }
 </style>

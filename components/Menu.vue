@@ -1,24 +1,59 @@
-<script lang="ts" setup>
+<script setup lang="ts">
+import { computed } from 'vue';
 
+
+const menuData = [
+    { name: 'Cerimónia', id: 'ceremony' },
+    { name: 'Festa', id: 'party' },
+    { name: 'Onde ficar', id: 'accomodation' }
+]
+
+const menuItems = computed(() => menuData);
 </script>
-
 <template>
-    <div class="menu">
-        <Logo />
+    <div class="menu-wrapper">
+        <MobileMenu class="mobile-menu" />
+        <ul class="menu">
+            <li v-for="item in menuItems" :key="item.id">
+                <Anchor :id="item.id" class="menu-item">
+                    {{item.name}}
+                </Anchor>
+            </li>
+        </ul>
     </div>
 </template>
-<style lang="postcss" scoped>
-    .menu {
-        height: 60px;
-        @apply bg-gray-100;
-        position: fixed;
-        top: 0;
-        z-index: 100;
-        width:100%;
-        @apply py-2;
-        @apply flex items-center;
-        @apply border-b-2;
-        @apply border-gray-300;
+<style lang="postcss">
+.mobile-menu {
+    @media screen(sm) {
+        @apply hidden;
     }
+}
 
+.menu-wrapper {
+
+    @media screen(sm) {
+        @apply flex-1;
+
+    }
+}
+
+.menu {
+    @apply hidden;
+
+    @media screen(sm) {
+        @apply flex items-center justify-center;
+    }
+}
+
+.menu-item {
+    @apply text-lg;
+    color: #CC99E9;
+    font-weight: 600;
+    @apply mr-10;
+}
+
+.menu-item:hover {
+    @apply text-indigo-200;
+    transition: color 0.3s ease;
+}
 </style>

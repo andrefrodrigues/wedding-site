@@ -1,6 +1,6 @@
 <template>
     <main>
-      <Menu />
+      <Header />
       <Hero />
       <Counter />
       <Ceremony />
