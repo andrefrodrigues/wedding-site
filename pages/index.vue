@@ -6,6 +6,7 @@
       <Ceremony />
       <Party />
       <Accomodation />
+      <Footer />
     </main>
 </template>
 <script lang="ts" setup>
