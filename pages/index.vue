@@ -6,6 +6,7 @@
       <Ceremony />
       <Party />
       <Accomodation />
+      <Curiosities />
       <Footer />
     </main>
 </template>
