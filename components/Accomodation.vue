@@ -19,9 +19,11 @@ const hotels = computed(() => hotelData.sort((h1, h2) => h1.name.localeCompare(h
             </Anchor>
 
             <div class="card-container">
-                <a v-for="hotel in hotels" :key="hotel.id" :href="hotel.url" class="card-wrapper" target="_blank">
-                    <Card :title="hotel.name" :image="hotel.image" />
-                </a>
+                <div v-for="hotel in hotels" :key="hotel.id" :href="hotel.url" class="card-wrapper">
+                    <a :href="hotel.url" target="_blank">
+                        <Card :title="hotel.name" :image="hotel.image" />
+                    </a>
+                </div>
             </div>
         </div>
     </section>
