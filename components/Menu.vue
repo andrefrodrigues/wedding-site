@@ -7,7 +7,7 @@ const menuData = [
     { name: 'Cerimónia', id: 'ceremony' },
     { name: 'Festa', id: 'party' },
     { name: 'Onde ficar', id: 'accomodation' },
-    {name: 'Curiosidades', id: 'curiosities'},
+    /* {name: 'Curiosidades', id: 'curiosities'}, */
 ]
 
 const menuItems = computed(() => menuData);
