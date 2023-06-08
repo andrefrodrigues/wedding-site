@@ -4,7 +4,8 @@
 <template>
   <section class="reception" id="reception">
     <div class="content">
-      <p class="message">Antes da cerimónia religiosa passem pela casa dos pais da Elisa e venham brindar connosco.</p>
+      <p class="message">Antes da cerimónia religiosa passem pela casa dos pais da Elisa e venham petiscar qualquer coisa e brindar connosco.</p>
+      <p class="message">Apareçam a partir das 9h30</p>
       <div class="card-wrapper">
         <a href="https://goo.gl/maps/Nm8kocf4aXdocdk67" target="_blank">
           <Card title="Localização" image="casa-pais-elisa.png"/>
@@ -36,12 +37,13 @@
 
   @media screen(md) {
     @apply w-1/2;
+    @apply text-3xl; 
+    @apply leading-10;
   }
 
+  @apply text-2xl;
   @apply mx-auto;
   @apply text-center;
-  @apply text-3xl; 
-  @apply leading-10;
 }
 
 .reception::after {
