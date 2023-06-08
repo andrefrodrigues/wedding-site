@@ -3,6 +3,7 @@
       <Header />
       <Hero />
       <Counter />
+      <Reception />
       <Ceremony />
       <Party />
       <Accomodation />
